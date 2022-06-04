@@ -1,0 +1,123 @@
+/* GENERAL/GLOBAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+  --gridGap: 2px;
+}
+/* END OF CSS VARIABLES */
+
+/* END OF GENERAL/GLOBAL STYLES */
+
+/* ****************************************************** */
+
+/* CALCULATOR HEADER STYLES */
+header {
+  width: 100vw;
+  height: 5vh;
+  background-color: red;
+}
+/* END OF CALCULATOR HEADER STYLES */
+
+/* ****************************************************** */
+
+/* CALCULATOR SCREEN STYLES */
+
+.calc-screen {
+  width: 100vw;
+  height: 30vh;
+  background-color: aqua;
+}
+
+/* END OF CALCULATOR SCREEN STYLES */
+
+/* ****************************************************** */
+
+/* CALCULATOR KEYS STYLE */
+
+.calc-keys {
+  width: 100vw;
+  height: 65vh;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: var(--gridGap);
+  background-color: black;
+}
+
+.btn {
+  background-color: darkgray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+    /* ****************************************************** */
+
+/* TOP MOST SECTION STYLES */
+.top-most {
+  width: 100%;
+  /* background-color: greenyellow; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--gridGap);
+}
+/* END OF TOP MOST SECTION STYLES */
+
+/* BOTTOM SECTION STYLES */
+.bottom-most {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: var(--gridGap);
+}
+
+/* NUMBER KEYS STYLES */
+.numbers-section {
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--gridGap);
+}
+
+.numbers-section .btn {
+  background-color: gray;
+  font-weight: 900;
+}
+
+.numbers-section .btn:hover {
+  background-color: white;
+}
+/* END OF NUMBERS KEYS STYLES */
+
+/* OPERATORS KEY STYLES */
+.operators-section {
+  /* background-color: gold; */
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: var(--gridGap);
+}
+/* END OF OPERATORS KEY STYLES */
+
+/* END OF BOTTOM SECTION STYLES */
+
+    /* ****************************************************** */
+
+    /* ****************************************************** */
+
+/* END OF CALCULATOR KEYS STYLE */
+
+/* ****************************************************** */
