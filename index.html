@@ -17,7 +17,18 @@
     <!-- END OF CALCULATOR HEADER -->
 
     <!-- CALCULATOR SCREEN -->
-    <div class="calc-screen"></div>
+    <div class="calc-screen">
+      <div class="result-screen"></div>
+      <div class="display-screen"></div>
+      <div class="memory-keys">
+        <div class="memory-btn">MC</div>
+        <div class="memory-btn">MR</div>
+        <div class="memory-btn">M+</div>
+        <div class="memory-btn">M-</div>
+        <div class="memory-btn">MS</div>
+        <div class="memory-btn">Madd</div>
+      </div>
+    </div>
     <!-- END OF CALCULATOR SCREEN -->
 
     <!-- CALCULATOR KEYS -->
@@ -26,12 +37,12 @@
       <section class="top-most">
         <div class="btn">%</div>
         <div class="btn">CE</div>
-        <div class="btn">C</div>
-        <div class="btn">back</div>
+        <div class="btn clear-btn">C</div>
+        <div class="btn backspace">back</div>
         <div class="btn">1/x</div>
         <div class="btn">x2</div>
         <div class="btn">sqrt</div>
-        <div class="btn">div</div>
+        <div class="btn op-key" id="divideBtn">&#247</div>
       </section>
       <!-- END OF TOPMOST SECTION OF CALCULATOR -->
 
@@ -56,10 +67,10 @@
 
         <!-- OPERATORS SECTION OF CALCULATOR -->
         <div class="operators-section">
-          <div class="btn op-key">*</div>
-          <div class="btn op-key">-</div>
-          <div class="btn op-key">+</div>
-          <div class="btn op-key">=</div>
+          <div class="btn op-key" id="timesBtn">&#215</div>
+          <div class="btn op-key" id="minusBtn">-</div>
+          <div class="btn op-key" id="plusBtn">+</div>
+          <div class="btn equal-key">=</div>
         </div>
         <!-- END OF OPERATORS SECTION OF CALCULATOR -->
       </section>
